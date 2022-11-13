@@ -41,13 +41,6 @@
             "x64",
             "arm64"
           ]
-        },
-        {
-          "target": "appx",
-          "arch": [
-            "x64",
-            "arm64"
-          ]
         }
       ],
       "icon": "assets/icons/logo.png"
