@@ -8,7 +8,7 @@
     "start": "electron .",
     "build": "electron-builder build",
     "build:osx": "electron-builder build --mac",
-    "build:win": "electron-builder build --win --ia32 --x64 --arm64",
+    "build:win": "electron-builder build --win",
     "build:all": "npm run build:win && npm run build:osx",
     "pack": "npm run build"
   },
@@ -33,7 +33,23 @@
       "icon": "assets/icons/favicon.icns"
     },
     "win": {
-      "target": "nsis",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "ia32",
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "appx",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
       "icon": "assets/icons/logo.png"
     }
   }
