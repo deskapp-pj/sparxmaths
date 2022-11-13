@@ -8,15 +8,15 @@
     "start": "electron .",
     "build": "electron-builder build",
     "build:osx": "electron-builder build --mac",
-    "build:win": "electron-builder build --win --x64",
+    "build:win": "electron-builder build --win --ia32 --x64 --arm64",
     "build:all": "npm run build:win && npm run build:osx",
     "pack": "npm run build"
   },
   "author": "SSKATE <minsu_kim@bishanoi.net>",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^12.0.4",
-    "electron-builder": "^22.10.5",
+    "electron": "^21.2.3",
+    "electron-builder": "^23.6.0",
     "path": "^0.12.7"
   },
   "build": {
