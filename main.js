@@ -8,12 +8,13 @@ function createWindow () {
     width: 1280,
     height: 720,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      devtools: false
     },
     icon: path.join(__dirname, 'assets/icons/logo.png')
   })
 
-  win.loadFile(path.join(__dirname, 'pages/index.html'))
+  win.loadURL('https://welcome.sparxmaths.uk/')
 
   // win.webContents.openDevTools()
 
