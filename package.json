@@ -23,7 +23,13 @@
     "appId": "sparxmaths",
     "mac": {
       "target": [
-        "default"
+        {
+          "target": "default",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
       ],
       "icon": "assets/icons/favicon.icns"
     },
